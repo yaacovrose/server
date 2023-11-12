@@ -1,31 +1,19 @@
-import { deprecate } from "util";
-import { ObjectId } from 'mongodb'
-
 interface Product {
+  [x: string]: any;
   id: number;
   title: string;
   price: number;
   description: string;
   category: string;
-  attribute: Attribute[];
+  attribute: Attributes[];
   count: number;
   quantity: number;
 }
-interface Attribute {
+
+interface Attributes {
   Description: string;
   Details: number | string;
 }
 
-interface RequestBody {
-    title: string;
-    price: number;
-    description: string;
-    category: string;
-    image: string;
-    rating: {rate:number, count:number};
-    quantity: number;
-  }
 
-
-
-export { Product, RequestBody}
+export { Product, Attributes}
