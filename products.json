@@ -1,0 +1,725 @@
+[
+    {
+        "id": 1,
+        "title": "Smartphone XYZ",
+        "price": 599.99,
+        "description": "6.5-inch AMOLED Display, 128GB Storage, 8GB RAM, Quad Camera, 5000mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.5 },
+            { "Description": "storage_capacity", "Details": 128 },
+            { "Description": "battery_capacity", "Details": 5000 },
+            { "Description": "ram", "Details": 8 }
+        ],
+        "count": 120,
+        "quantity": 20
+    },
+    {
+        "id": 2,
+        "title": "SuperPhone Pro",
+        "price": 699.99,
+        "description": "6.8-inch Super AMOLED Display, 256GB Storage, 12GB RAM, Triple Camera, 6000mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.8 },
+            { "Description": "storage_capacity", "Details": 256 },
+            { "Description": "battery_capacity", "Details": 6000 },
+            { "Description": "ram", "Details": 12 }
+        ],
+        "count": 150,
+        "quantity": 15
+    },
+    {
+        "id": 3,
+        "title": "Phone Master 2000",
+        "price": 499.99,
+        "description": "6.2-inch LCD Display, 64GB Storage, 6GB RAM, Dual Camera, 4000mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.2 },
+            { "Description": "storage_capacity", "Details": 64 },
+            { "Description": "battery_capacity", "Details": 4000 },
+            { "Description": "ram", "Details": 6 }
+        ],
+        "count": 90,
+        "quantity": 18
+    },
+    {
+        "id": 4,
+        "title": "MegaPhone Max",
+        "price": 799.99,
+        "description": "7.0-inch OLED Display, 512GB Storage, 16GB RAM, Penta Camera, 7000mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 7.0 },
+            { "Description": "storage_capacity", "Details": 512 },
+            { "Description": "battery_capacity", "Details": 7000 },
+            { "Description": "ram", "Details": 16 }
+        ],
+        "count": 200,
+        "quantity": 12
+    },
+    {
+        "id": 5,
+        "title": "TechElite Phone",
+        "price": 899.99,
+        "description": "6.5-inch Retina Display, 256GB Storage, 12GB RAM, Quad Camera, 5500mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.5 },
+            { "Description": "storage_capacity", "Details": 256 },
+            { "Description": "battery_capacity", "Details": 5500 },
+            { "Description": "ram", "Details": 12 }
+        ],
+        "count": 180,
+        "quantity": 17
+    },
+    {
+        "id": 6,
+        "title": "XtremePhone X3",
+        "price": 549.99,
+        "description": "6.4-inch AMOLED Display, 128GB Storage, 10GB RAM, Triple Camera, 4800mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.4 },
+            { "Description": "storage_capacity", "Details": 128 },
+            { "Description": "battery_capacity", "Details": 4800 },
+            { "Description": "ram", "Details": 10 }
+        ],
+        "count": 130,
+        "quantity": 22
+    },
+    {
+        "id": 7,
+        "title": "EcoPhone Lite",
+        "price": 349.99,
+        "description": "6.0-inch LCD Display, 64GB Storage, 4GB RAM, Dual Camera, 3500mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.0 },
+            { "Description": "storage_capacity", "Details": 64 },
+            { "Description": "battery_capacity", "Details": 3500 },
+            { "Description": "ram", "Details": 4 }
+        ],
+        "count": 80,
+        "quantity": 25
+    },
+    {
+        "id": 8,
+        "title": "InnoPhone Pro",
+        "price": 749.99,
+        "description": "6.7-inch Super Retina Display, 512GB Storage, 16GB RAM, Quad Camera, 6000mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.7 },
+            { "Description": "storage_capacity", "Details": 512 },
+            { "Description": "battery_capacity", "Details": 6000 },
+            { "Description": "ram", "Details": 16 }
+        ],
+        "count": 160,
+        "quantity": 14
+    },
+    {
+        "id": 9,
+        "title": "SlimPhone Pro",
+        "price": 479.99,
+        "description": "6.1-inch OLED Display, 128GB Storage, 8GB RAM, Dual Camera, 4200mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.1 },
+            { "Description": "storage_capacity", "Details": 128 },
+            { "Description": "battery_capacity", "Details": 4200 },
+            { "Description": "ram", "Details": 8 }
+        ],
+        "count": 110,
+        "quantity": 19
+    },
+    {
+        "id": 10,
+        "title": "XenonPhone Ultra",
+        "price": 899.99,
+        "description": "6.9-inch QHD+ Display, 512GB Storage, 16GB RAM, Penta Camera, 7000mAh Battery",
+        "category": "smartphones",
+        "attribute": [
+            { "Description": "screen_size", "Details": 6.9 },
+            { "Description": "storage_capacity", "Details": 512 },
+            { "Description": "battery_capacity", "Details": 7000 },
+            { "Description": "ram", "Details": 16 }
+        ],
+        "count": 220,
+        "quantity": 10
+    },
+    {
+        "id": 11,
+        "title": "FreshMaster DualZone",
+        "price": 899.99,
+        "description": "24 cu. ft. French Door Refrigerator, Stainless Steel, Dual Cooling Zones",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 680 },
+            { "Description": "number_of_doors", "Details": 3 },
+            { "Description": "color", "Details": "Stainless Steel" }
+        ],
+        "count": 100,
+        "quantity": 16
+    },
+    {
+        "id": 12,
+        "title": "CoolFreeze Pro",
+        "price": 799.99,
+        "description": "22 cu. ft. Side-by-Side Refrigerator, Black Stainless Steel, Adjustable Shelves",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 620 },
+            { "Description": "number_of_doors", "Details": 2 },
+            { "Description": "color", "Details": "Black Stainless Steel" }
+        ],
+        "count": 90,
+        "quantity": 18
+    },
+    {
+        "id": 13,
+        "title": "MegaCooler Ultra",
+        "price": 999.99,
+        "description": "28 cu. ft. French Door Refrigerator, White, Ice and Water Dispenser",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 790 },
+            { "Description": "number_of_doors", "Details": 4 },
+            { "Description": "color", "Details": "White" }
+        ],
+        "count": 110,
+        "quantity": 15
+    },
+    {
+        "id": 14,
+        "title": "ChillMaster Inverter",
+        "price": 849.99,
+        "description": "26 cu. ft. French Door Refrigerator, Black, Inverter Compressor",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 730 },
+            { "Description": "number_of_doors", "Details": 3 },
+            { "Description": "color", "Details": "Black" }
+        ],
+        "count": 95,
+        "quantity": 22
+    },
+    {
+        "id": 15,
+        "title": "EcoFreeze EnergySaver",
+        "price": 779.99,
+        "description": "23 cu. ft. Side-by-Side Refrigerator, Stainless Steel, Energy-Efficient",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 655 },
+            { "Description": "number_of_doors", "Details": 2 },
+            { "Description": "color", "Details": "Stainless Steel" }
+        ],
+        "count": 105,
+        "quantity": 17
+    },
+    {
+        "id": 16,
+        "title": "SmartChill Connect",
+        "price": 1199.99,
+        "description": "30 cu. ft. French Door Refrigerator, Silver, Smart Home Integration",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 850 },
+            { "Description": "number_of_doors", "Details": 3 },
+            { "Description": "color", "Details": "Silver" }
+        ],
+        "count": 130,
+        "quantity": 14
+    },
+    {
+        "id": 17,
+        "title": "FreezeZone Pro",
+        "price": 699.99,
+        "description": "20 cu. ft. Top Freezer Refrigerator, Black, Frost-Free Design",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 565 },
+            { "Description": "number_of_doors", "Details": 2 },
+            { "Description": "color", "Details": "Black" }
+        ],
+        "count": 80,
+        "quantity": 20
+    },
+    {
+        "id": 18,
+        "title": "GigaChill Mega",
+        "price": 999.99,
+        "description": "32 cu. ft. French Door Refrigerator, Stainless Steel, Mega Capacity",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 900 },
+            { "Description": "number_of_doors", "Details": 4 },
+            { "Description": "color", "Details": "Stainless Steel" }
+        ],
+        "count": 150,
+        "quantity": 12
+    }
+    ,
+    {
+        "id": 19,
+        "title": "SlimFreeze SpaceSaver",
+        "price": 599.99,
+        "description": "18 cu. ft. Bottom Freezer Refrigerator, White, Space-Saving Design",
+        "category": "refrigerators",
+        "attribute": [
+            { "Description": "capacity_liters", "Details": 510 },
+            { "Description": "number_of_doors", "Details": 2 },
+            { "Description": "color", "Details": "White" }
+        ],
+        "count": 75,
+        "quantity": 23
+    }
+    ,
+    {
+        "id": 20,
+        "title": "CoolTech FrostGuard",
+        "price": 899.99,
+        "description": "25 cu. ft. French Door Refrigerator, Black Stainless Steel, FrostGuard Technology",
+        "category": "refrigerators",
+        "attribute": [        
+            { "Description": "capacity_liters", "Details": 710 },
+            { "Description": "number_of_doors", "Details": 3 },
+            { "Description": "color", "Details": "Black Stainless Steel" }
+        ],
+        "count": 120,
+        "quantity": 16
+    },
+    
+        {
+            "id": 21,
+            "title": "Sony WH-1000XM4",
+            "price": 349.99,
+            "description": "Wireless Noise Cancelling Headphones, 30 Hours Battery Life, Touch Controls, Hi-Res Audio",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "Over-Ear" },
+                { "Description": "connectivity", "Details": "Wireless" },
+                { "Description": "battery_life", "Details": 30 },
+                { "Description": "noise_cancelling", "Details": true }
+            ],
+            "count": 100,
+            "quantity": 25
+        },
+        {
+            "id": 22,
+            "title": "AirPods Pro",
+            "price": 249.99,
+            "description": "Wireless In-Ear Headphones, Active Noise Cancellation, Sweat and Water Resistant",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "In-Ear" },
+                { "Description": "connectivity", "Details": "Wireless" },
+                { "Description": "water_resistant", "Details": true },
+                { "Description": "noise_cancelling", "Details": true }
+            ],
+            "count": 120,
+            "quantity": 30
+        },
+        {
+            "id": 23,
+            "title": "Bose QuietComfort Earbuds",
+            "price": 279.99,
+            "description": "True Wireless Noise Cancelling Earbuds, Comfortable Design, 6 Hours Battery Life",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "In-Ear" },
+                { "Description": "connectivity", "Details": "True Wireless" },
+                { "Description": "comfortable_design", "Details": true },
+                { "Description": "battery_life", "Details": 6 }
+            ],
+            "count": 90,
+            "quantity": 18
+        },
+        {
+            "id": 24,
+            "title": "JBL Free X",
+            "price": 99.99,
+            "description": "Truly Wireless In-Ear Headphones, Hands-Free Calls, 4 Hours Battery Life",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "In-Ear" },
+                { "Description": "connectivity", "Details": "Truly Wireless" },
+                { "Description": "hands_free_calls", "Details": true },
+                { "Description": "battery_life", "Details": 4 }
+            ],
+            "count": 110,
+            "quantity": 22
+        },
+        {
+            "id": 25,
+            "title": "Sennheiser Momentum True Wireless 2",
+            "price": 299.99,
+            "description": "True Wireless Earbuds, Active Noise Cancellation, Touch Controls, 7 Hours Battery Life",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "True Wireless" },
+                { "Description": "noise_cancellation", "Details": true },
+                { "Description": "touch_controls", "Details": true },
+                { "Description": "battery_life", "Details": 7 }
+            ],
+            "count": 80,
+            "quantity": 16
+        },
+        {
+            "id": 26,
+            "title": "Anker Soundcore Liberty Air 2 Pro",
+            "price": 129.99,
+            "description": "True Wireless Earbuds, Active Noise Cancelling, Customizable EQ, 26 Hours Battery Life",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "In-Ear" },
+                { "Description": "connectivity", "Details": "True Wireless" },
+                { "Description": "noise_cancelling", "Details": true },
+                { "Description": "battery_life", "Details": 26 }
+            ],
+            "count": 105,
+            "quantity": 21
+        },
+        {
+            "id": 27,
+            "title": "Beats Powerbeats Pro",
+            "price": 199.99,
+            "description": "Wireless Earphones, Up to 9 Hours of Listening Time, Sweat and Water Resistant",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "Earphones" },
+                { "Description": "battery_life", "Details": 9 },
+                { "Description": "water_resistant", "Details": true },
+                { "Description": "sweat_resistant", "Details": true }
+            ],
+            "count": 95,
+            "quantity": 19
+        },
+        {
+            "id": 28,
+            "title": "Skullcandy Indy Evo",
+            "price": 79.99,
+            "description": "True Wireless In-Ear Earbuds, 30 Hours Total Battery Life with Case, Rapid Charge",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "True Wireless" },
+                { "Description": "battery_life", "Details": 30 },
+                { "Description": "rapid_charge", "Details": true }
+            ],
+            "count": 100,
+            "quantity": 20
+        },
+        {
+            "id": 29,
+            "title": "1MORE Stylish True Wireless Earbuds",
+            "price": 69.99,
+            "description": "Bluetooth In-Ear Headphones, 6.5 Hours Battery Life, Multiple Color Options",
+            "category": "headphones",
+            "attribute": [
+                { "Description": "type", "Details": "In-Ear" },
+                { "Description": "connectivity", "Details": "Bluetooth" },
+                { "Description": "battery_life", "Details": 6.5 },
+                { "Description": "color_options", "Details": true }
+            ],
+            "count": 85,
+            "quantity": 17
+        },
+        {
+            "id": 30,
+            "title": "PowerBook Pro",
+            "price": 1499.99,
+            "description": "15.6-inch OLED Display, 1TB SSD, 32GB RAM, AMD Ryzen 9, High-Performance Graphics",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 15.6 },
+                { "Description": "storage_capacity", "Details": 1000 },
+                { "Description": "processor", "Details": "AMD Ryzen 9" },
+                { "Description": "ram", "Details": 32 }
+            ],
+            "count": 75,
+            "quantity": 15
+        },
+        {
+            "id": 31,
+            "title": "SlimBook 2000",
+            "price": 899.99,
+            "description": "14-inch Full HD Display, 512GB SSD, 16GB RAM, Intel Core i5, Sleek and Portable",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 14 },
+                { "Description": "storage_capacity", "Details": 512 },
+                { "Description": "processor", "Details": "Intel Core i5" },
+                { "Description": "ram", "Details": 16 }
+            ],
+            "count": 120,
+            "quantity": 25
+        },
+        {
+            "id": 32,
+            "title": "EliteBook X360",
+            "price": 1299.99,
+            "description": "13.3-inch Touchscreen, 256GB SSD, 8GB RAM, Intel Core i7, Convertible Design",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 13.3 },
+                { "Description": "storage_capacity", "Details": 256 },
+                { "Description": "processor", "Details": "Intel Core i7" },
+                { "Description": "ram", "Details": 8 }
+            ],
+            "count": 90,
+            "quantity": 18
+        },
+        {
+            "id": 33,
+            "title": "TravelMate 14",
+            "price": 699.99,
+            "description": "14-inch HD Display, 128GB SSD, 8GB RAM, AMD Ryzen 5, Lightweight and Portable",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 14 },
+                { "Description": "storage_capacity", "Details": 128 },
+                { "Description": "processor", "Details": "AMD Ryzen 5" },
+                { "Description": "ram", "Details": 8 }
+            ],
+            "count": 110,
+            "quantity": 22
+        },
+        {
+            "id": 34,
+            "title": "ProBook 15.6",
+            "price": 849.99,
+            "description": "15.6-inch Display, 512GB SSD, 16GB RAM, Intel Core i5, Business-Class Performance",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 15.6 },
+                { "Description": "storage_capacity", "Details": 512 },
+                { "Description": "processor", "Details": "Intel Core i5" },
+                { "Description": "ram", "Details": 16 }
+            ],
+            "count": 95,
+            "quantity": 19
+        },
+        {
+            "id": 35,
+            "title": "Surface Laptop 4",
+            "price": 1399.99,
+            "description": "13.5-inch PixelSense Display, 512GB SSD, 32GB RAM, AMD Ryzen 7, Premium Design",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 13.5 },
+                { "Description": "storage_capacity", "Details": 512 },
+                { "Description": "processor", "Details": "AMD Ryzen 7" },
+                { "Description": "ram", "Details": 32 }
+            ],
+            "count": 80,
+            "quantity": 16
+        },
+        {
+            "id": 36,
+            "title": "Inspiron 14 5000",
+            "price": 799.99,
+            "description": "14-inch FHD Display, 256GB SSD, 12GB RAM, Intel Core i7, Multimedia Performance",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 14 },
+                { "Description": "storage_capacity", "Details": 256 },
+                { "Description": "processor", "Details": "Intel Core i7" },
+                { "Description": "ram", "Details": 12 }
+            ],
+            "count": 105,
+            "quantity": 21
+        },
+        {
+            "id": 37,
+            "title": "ThinkPad X1 Carbon",
+            "price": 1599.99,
+            "description": "14-inch WQHD Display, 1TB SSD, 16GB RAM, Intel Core i9, Business-Class Ultrabook",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 14 },
+                { "Description": "storage_capacity", "Details": 1000 },
+                { "Description": "processor", "Details": "Intel Core i9" },
+                { "Description": "ram", "Details": 16 }
+            ],
+            "count": 85,
+            "quantity": 17
+        },
+        {
+            "id": 38,
+            "title": "Yoga C940",
+            "price": 1199.99,
+            "description": "15.6-inch 4K UHD Touchscreen, 512GB SSD, 16GB RAM, Intel Core i7, 2-in-1 Convertible",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 15.6 },
+                { "Description": "storage_capacity", "Details": 512 },
+                { "Description": "processor", "Details": "Intel Core i7" },
+                { "Description": "ram", "Details": 16 }
+            ],
+            "count": 95,
+            "quantity": 19
+        },
+        {
+            "id": 39,
+            "title": "ROG Zephyrus G14",
+            "price": 1399.99,
+            "description": "14-inch QHD Display, 1TB SSD, 32GB RAM, AMD Ryzen 9, Gaming Laptop",
+            "category": "laptops",
+            "attribute": [
+                { "Description": "screen_size", "Details": 14 },
+                { "Description": "storage_capacity", "Details": 1000 },
+                { "Description": "processor", "Details": "AMD Ryzen 9" },
+                { "Description": "ram", "Details": 32 }
+            ],
+            "count": 80,
+            "quantity": 16
+        },
+        
+    {
+        "id": 40,
+        "title": "Apple Watch Series 7",
+        "price": 399.99,
+        "description": "Always-On Retina Display, Blood Oxygen Measurement, Fitness and Health Tracking",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "Always-On Retina" },
+            { "Description": "health_features", "Details": ["Blood Oxygen Measurement", "Fitness Tracking"] }
+        ],
+        "count": 150,
+        "quantity": 30
+    },
+    {
+        "id": 41,
+        "title": "Samsung Galaxy Watch 4",
+        "price": 349.99,
+        "description": "AMOLED Display, Body Composition Analysis, ECG Monitoring, Wear OS by Google",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["Body Composition Analysis", "ECG Monitoring"] },
+            { "Description": "operating_system", "Details": "Wear OS by Google" }
+        ],
+        "count": 120,
+        "quantity": 24
+    },
+    {
+        "id": 42,
+        "title": "Fitbit Sense",
+        "price": 299.99,
+        "description": "EAMOLED Display, EDA Sensor, Stress Management, Heart Rate Tracking",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["EDA Sensor", "Stress Management", "Heart Rate Tracking"] }
+        ],
+        "count": 100,
+        "quantity": 20
+    },
+    {
+        "id": 43,
+        "title": "Garmin Venu 2",
+        "price": 399.99,
+        "description": "AMOLED Display, Body Battery Energy Monitoring, Advanced Sleep Tracking",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["Body Battery Energy Monitoring", "Advanced Sleep Tracking"] }
+        ],
+        "count": 90,
+        "quantity": 18
+    },
+    {
+        "id": 44,
+        "title": "Amazfit GTR 3",
+        "price": 249.99,
+        "description": "Circular AMOLED Display, SpO2 Measurement, 150+ Sports Modes, Built-in GPS",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "Circular AMOLED" },
+            { "Description": "health_features", "Details": ["SpO2 Measurement", "150+ Sports Modes"] },
+            { "Description": "gps", "Details": true }
+        ],
+        "count": 110,
+        "quantity": 22
+    },
+    {
+        "id": 45,
+        "title": "Huawei Watch GT 3",
+        "price": 329.99,
+        "description": "AMOLED Display, TruSeen 4.5+ Heart Rate Monitoring, HarmonyOS, 100+ Workout Modes",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["TruSeen 4.5+ Heart Rate Monitoring", "100+ Workout Modes"] },
+            { "Description": "operating_system", "Details": "HarmonyOS" }
+        ],
+        "count": 80,
+        "quantity": 16
+    },
+    {
+        "id": 46,
+        "title": "Fossil Gen 6",
+        "price": 279.99,
+        "description": "AMOLED Display, Sleep Tracking, Built-in Speaker and Microphone, Wear OS by Google",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["Sleep Tracking"] },
+            { "Description": "audio", "Details": ["Built-in Speaker", "Built-in Microphone"] },
+            { "Description": "operating_system", "Details": "Wear OS by Google" }
+        ],
+        "count": 95,
+        "quantity": 19
+    },
+    {
+        "id": 47,
+        "title": "TicWatch Pro 3 Ultra GPS",
+        "price": 299.99,
+        "description": "Dual-Layer Display, Blood Oxygen Level Monitoring, Ultra GPS, Wear OS by Google",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "Dual-Layer" },
+            { "Description": "health_features", "Details": ["Blood Oxygen Level Monitoring"] },
+            { "Description": "gps", "Details": "Ultra GPS" },
+            { "Description": "operating_system", "Details": "Wear OS by Google" }
+        ],
+        "count": 105,
+        "quantity": 21
+    },
+    {
+        "id": 48,
+        "title": "Oppo Watch Free",
+        "price": 199.99,
+        "description": "AMOLED Display, Sleep Tracking, 50+ Workout Modes, ColorOS Watch",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["Sleep Tracking", "50+ Workout Modes"] },
+            { "Description": "operating_system", "Details": "ColorOS Watch" }
+        ],
+        "count": 100,
+        "quantity": 20
+    },
+    {
+        "id": 49,
+        "title": "Xiaomi Mi Watch",
+        "price": 149.99,
+        "description": "1.39-inch AMOLED Display, Blood Oxygen Monitor, 16 Days Battery Life, GPS",
+        "category": "smartwatches",
+        "attribute": [
+            { "Description": "display_type", "Details": "AMOLED" },
+            { "Description": "health_features", "Details": ["Blood Oxygen Monitor"] },
+            { "Description": "battery_life", "Details": 16 },
+            { "Description": "gps", "Details": true }
+        ],
+        "count": 115,
+        "quantity": 23
+    }
+]
+        
+    
+    
+    
+    
