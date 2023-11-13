@@ -1,4 +1,4 @@
-import { ProductModel } from "../connectToDB";
+import { ProductModel } from "../connectToDB"
 import { Product } from "../interface";
 
 

@@ -1,12 +1,14 @@
 import { Document, Schema, Model, SchemaTypes } from "mongoose";
 import mongoose from "mongoose";
-import { Product, Attributes } from "./interface";
+import { Product, Attributes, Users } from "./interface";
 
 
 const attributeSchema:Schema = new Schema<Attributes>({
   Description: { type: String, required: true },
   Details: { type: Schema.Types.Mixed, required: true },
 });
+
+
 
 const productSchema:Schema = new Schema<Product>({
   id: { type: Number, required: true },
@@ -19,6 +21,14 @@ const productSchema:Schema = new Schema<Product>({
   quantity: { type: Number, required: true },
 });
 
+const usersSchema:Schema = new Schema<Users>({
+  id: { type: Number, required: true },
+  userName: { type: String, required: true },
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+});
+
+
 export const connectToDatabase = async () => {
   try {
     await mongoose.connect('mongodb+srv://store_23:store_23@cluster0.kcamuno.mongodb.net/store_db?retryWrites=true&w=majority');
@@ -29,6 +39,7 @@ export const connectToDatabase = async () => {
   }
 }
 
+
 export const ProductModel: Model<Product> = mongoose.model<Product>('product', productSchema)
 
-
+export const UsersModel: Model<Users> = mongoose.model<Users>('users', usersSchema)

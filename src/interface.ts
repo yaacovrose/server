@@ -15,5 +15,13 @@ interface Attributes {
   Details: number | string;
 }
 
+interface UsersInterface {
+  save(): unknown;
+  id: number;
+  userName: string;
+  email: string;
+  password: string;
+}
 
-export { Product, Attributes}
+
+export { Product, Attributes, UsersInterface };

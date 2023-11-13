@@ -2,6 +2,8 @@ import { Request, Response } from 'express'
 import productService from "./service"
 import { Product } from "../interface.js";
 
+type ProductResult = {}
+
 const getAllProducts = async (req: Request, res: Response) => {
     try {
         const products: Product[] | Error = await productService.getAllProducts();
