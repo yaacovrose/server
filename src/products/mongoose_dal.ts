@@ -21,7 +21,7 @@ const getProductsByCategory = async (category: string): CollectionResult => {
   try {
     const results:Product[] = await ProductModel.find({category: category});
     const data:Product[] = results.map((document) => document.toObject());
-    // console.log('Data fetched successfully');
+    console.log('Data fetched successfully');
     return data;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -32,32 +32,30 @@ const getProductsByCategory = async (category: string): CollectionResult => {
 
 const getTopCategory = async ():CollectionResult => {
   try {
-    // const result:Product [] = await ProductModel.aggregate([
-      // {
-      //   $group: {
-      //     _id: "$category",
-      //     clickCount: { $sum: "$count" }
-      //   }
-      // },
-      // {
-      //   $sort: { clickCount: -1 }
-      // },
-      // {
-      //   $limit: 3
-      // },
-      // {
-      //   $project: {
-      //     _id: 0,
-      //     category: "$_id",
-      //     clickCount: 1
-      //   }
-      // }
-    // ]);
-
-    // const data:Product[] = result.map((document) => document.toObject());
-    // console.log('result:', result);
-    // // console.log('Data fetched successfully');
-    // return result;
+    const result:Product [] = await ProductModel.aggregate([
+      {
+        $group: {
+          _id: "$category",
+          clickCount: { $sum: "$count" }
+        }
+      },
+      {
+        $sort: { clickCount: -1 }
+      },
+      {
+        $limit: 3
+      },
+      {
+        $project: {
+          _id: 0,
+          category: "$_id",
+          clickCount: 1
+        }
+      }
+    ]);
+    console.log('result:', result);
+    console.log('Data fetched successfully');
+    return result;
   } catch (error) {
     console.error('Error fetching data:', error);
     throw error; 
