@@ -21,10 +21,20 @@ const getProductsByCategory = async (req: Request, res: Response) => {
     }
 }
 
+const getTopCategory = async (req: Request, res: Response) => {
+    try {
+        const products: Product[] | string | Error = await productService.getTopCategory();
+        res.status(200).json(products)
+    } catch (err) {
+        throw err
+    }
+}
+
 
 const productController = {
     getAllProducts,
     getProductsByCategory,
+    getTopCategory
 }
 
 export default productController 

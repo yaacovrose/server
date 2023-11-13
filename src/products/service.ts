@@ -2,7 +2,7 @@ import { Product, Attributes } from "../interface";
 import productDal from "./mongoose_dal"
 
 
-const getAllProducts = async (): Promise<Product[] | Error> => {
+const getAllProducts = async (): Promise<Product[] | Error | string> => {
     try {
         const allProducts: Product[] | Error = await productDal.getAllProducts();
         return allProducts;
@@ -23,9 +23,22 @@ const getProductsByCategory = async (category: string): Promise<Product[] | stri
     }
 }
 
+const getTopCategory = async (): Promise<Product[] | string | Error> => {
+    try {
+        const products: Product[] | Error = await productDal.getTopCategory();
+        if (products) {
+            return products;
+        } 
+        return "category not found";
+    } catch (err) {
+        throw err
+    }
+}
+
 const productService = {
     getAllProducts,
     getProductsByCategory,
+    getTopCategory
 }
 
 export default productService
