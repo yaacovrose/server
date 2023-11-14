@@ -1,9 +1,5 @@
 import Joi from "joi";
-
-interface UserValid {
-    email: string,
-    password: string
-}
+import { UserValid } from "../../interface";
 
 const userValidation = (user:UserValid) => {
   const schema = Joi.object({

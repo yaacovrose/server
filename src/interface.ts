@@ -23,5 +23,17 @@ interface UsersInterface {
   password: string;
 }
 
+interface UserValid {
+  email: string,
+  password: string
+}
 
-export { Product, Attributes, UsersInterface };
+
+
+
+export { 
+  Product, 
+  Attributes, 
+  UsersInterface,
+  UserValid 
+};

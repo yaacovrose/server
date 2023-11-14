@@ -1,6 +1,6 @@
 import { Document, Schema, Model, SchemaTypes } from "mongoose";
 import mongoose from "mongoose";
-import { Product, Attributes, Users } from "./interface";
+import { Product, Attributes, UsersInterface } from "./interface";
 
 
 const attributeSchema:Schema = new Schema<Attributes>({
@@ -21,7 +21,7 @@ const productSchema:Schema = new Schema<Product>({
   quantity: { type: Number, required: true },
 });
 
-const usersSchema:Schema = new Schema<Users>({
+const usersSchema:Schema = new Schema<UsersInterface>({
   id: { type: Number, required: true },
   userName: { type: String, required: true },
   email: { type: String, required: true },
@@ -42,4 +42,4 @@ export const connectToDatabase = async () => {
 
 export const ProductModel: Model<Product> = mongoose.model<Product>('product', productSchema)
 
-export const UsersModel: Model<Users> = mongoose.model<Users>('users', usersSchema)
+export const UsersModel: Model<UsersInterface> = mongoose.model<UsersInterface>('users', usersSchema)

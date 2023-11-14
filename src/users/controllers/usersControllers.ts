@@ -1,14 +1,13 @@
 import usersService from "../services/usersApiService";
 import { Request, Response } from "express";
-import { UsersInterface } from "../../interface";
-import userValidation from "../joi/validation";
+import { UsersInterface, UserValid } from "../../interface";
 
 
-const getUserByEmail = async (req: Request, res: Response) => {
+const login = async (req: Request, res: Response) => {
   try {
-    const email: string = req.params.email;
-    console.log(email);
-    const user = await usersService.getUser(email);
+    const userFromClient: UserValid = req.body;
+    console.log(userFromClient);
+    const user = await usersService.getUser(userFromClient);
     return res.send(user);
   } catch (error) {
     throw error
@@ -26,7 +25,7 @@ const userRegistration = async (req: Request, res: Response) => {
 };
 
 const usersController = {
-  getUserByEmail,
+  login,
   userRegistration
 }
 

@@ -3,7 +3,7 @@ import usersController from "../controllers/usersControllers";
 
 const usersRouter = express.Router(); 
 
-usersRouter.get("/:email", usersController.getUserByEmail);
+usersRouter.get("/login", usersController.login);
 
 usersRouter.post("/", usersController.userRegistration);
 

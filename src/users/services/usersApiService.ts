@@ -1,14 +1,20 @@
-import { UsersInterface } from "../../interface";
+import { UsersInterface, UserValid } from "../../interface";
 import { UsersModel } from "../../connectToDB";
-import userValidation from "../models/joi/userValidation";
+import userValidation from "../joi/validation";
+import { comparePassword, generateUserPassword } from "../../bcrypt/hashPassword";
 
 type UserResult = Promise<UsersInterface | Error | String>;
 
-const getUser = async (email: string):UserResult => {
+const getUser = async (user: UserValid):UserResult => {
   try {
-    const userFromDB = await UsersModel.findOne({ email: email })
-    if (!userFromDB) throw new Error("user not in DB!");
-    return userFromDB;
+    const userInDB = await UsersModel.findOne({ email: user.email }).exec();
+    console.log(userInDB)
+    if (!userInDB) return new Error("No user with this email in the database!");
+
+    if (!comparePassword(user.password, userInDB.password))
+      return new Error("The email or password is incorrect!");
+
+    return userInDB.userName;
   } catch (error) {
     throw error;
   }
@@ -22,6 +28,7 @@ export const register = async (user: UsersInterface): UserResult => {
     if (error?.details[0].message) console.log(error?.details[0].message);
     if (error?.details[0].message) return new Error(error?.details[0].message);
 
+    user.password = generateUserPassword(user.password);
     const newUser: UsersInterface = new UsersModel(user);
     newUser.save();
     return newUser;
