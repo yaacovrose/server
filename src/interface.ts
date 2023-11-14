@@ -28,6 +28,15 @@ interface UserValid {
   password: string
 }
 
+interface productCart {
+  productId: string
+  quantity: number
+}
+
+interface Cart {
+  userId:string,
+  product:productCart[]
+}
 
 
 
@@ -35,5 +44,7 @@ export {
   Product, 
   Attributes, 
   UsersInterface,
-  UserValid 
+  UserValid ,
+  Cart,
+  productCart
 };

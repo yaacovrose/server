@@ -1,6 +1,7 @@
 import { Document, Schema, Model, SchemaTypes } from "mongoose";
 import mongoose from "mongoose";
-import { Product, Attributes, UsersInterface } from "./interface";
+import { Product, Attributes, UsersInterface, Cart, productCart } from "./interface";
+import { number } from "joi";
 
 
 const attributeSchema:Schema = new Schema<Attributes>({
@@ -27,6 +28,18 @@ const usersSchema:Schema = new Schema<UsersInterface>({
   password: { type: String, required: true },
 });
 
+const productCartSchema:Schema = new Schema<productCart>({
+  productId: { type: String, required: true },
+  quantity: { type: Number, required: true },
+
+});
+
+const cartSchema:Schema = new Schema<Cart>({
+  userId: { type: String, required: true },
+  product: { type: [productCartSchema], required: true },
+
+});
+
 
 export const connectToDatabase = async () => {
   try {
@@ -40,5 +53,7 @@ export const connectToDatabase = async () => {
 
 
 export const ProductModel: Model<Product> = mongoose.model<Product>('product', productSchema)
+
+export const  CartModel: Model<Cart> = mongoose.model<Cart>('cart', cartSchema)
 
 export const UsersModel: Model<UsersInterface> = mongoose.model<UsersInterface>('users', usersSchema)

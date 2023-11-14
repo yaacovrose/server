@@ -4,6 +4,7 @@ import { connectToDatabase } from './connectToDB'
 import cors from "./cors/cors";
 import usersRouter from "./users/routes/usersRoutes";
 import morgan from './serverLog/morgen';
+import cartRouter from "./cart/cart.router";
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(morgan)
 
 app.use('/api/products', productRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/cart',cartRouter)
 
 
 const PORT = 8181;
