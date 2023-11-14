@@ -2,13 +2,13 @@ import { ProductModel } from "../connectToDB"
 import { Product } from "../interface";
 
 
-type CollectionResult = Promise<Product[] | Error>;
+type CollectionResult = Promise<Product[] | Error | null>;
 
 const getAllProducts = async (): CollectionResult => {
   try {
     const results:Product[] = await ProductModel.find({});
     const data:Product[] = results.map((document) => document.toObject());
-    // console.log('Data fetched successfully');
+    console.log('Data fetched successfully');
     return data;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -62,10 +62,40 @@ const getTopCategory = async ():CollectionResult => {
   }
 };
 
+interface updateQuantity {
+  productId: string,
+  quantity: number
+}
+
+const updateQuantity = async (product: updateQuantity): CollectionResult => {
+  try {
+    const { productId, quantity } = product;
+    const updatedProduct: Product | null = await ProductModel.findOneAndUpdate(
+      { _id: productId, quantity: { $gt: quantity } },  
+      { $set: { quantity: quantity } },
+      { new: true }
+    );
+
+    if (!updatedProduct) {
+      console.log('The product has not updated - the new quantity is greater than the existing quantity');
+      return null;
+    }
+
+    console.log('product update successfully!');
+    return [updatedProduct.toObject()]; 
+  } catch (error) {
+    console.error('Error updating the product:', error);
+    throw error;
+  }
+};
+
+
+
 const productDal = {
   getAllProducts,
   getProductsByCategory,
-  getTopCategory
+  getTopCategory,
+  updateQuantity
 }
 
 

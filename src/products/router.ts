@@ -9,4 +9,6 @@ productRouter.get('/', productController.getAllProducts);
 productRouter.get('/category/:category', productController.getProductsByCategory);
 productRouter.get('/topcategory', productController.getTopCategory);
 
+productRouter.patch('/quantity', productController.updateQuantity);
+
 export default productRouter;

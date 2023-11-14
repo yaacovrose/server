@@ -9,7 +9,6 @@ const attributeSchema:Schema = new Schema<Attributes>({
 });
 
 
-
 const productSchema:Schema = new Schema<Product>({
   id: { type: Number, required: true },
   title: { type: String, required: true },
