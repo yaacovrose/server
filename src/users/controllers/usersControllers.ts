@@ -19,7 +19,7 @@ const userRegistration = async (req: Request, res: Response) => {
   try {
     const user: UsersInterface = req.body;
     const userFromDB = await usersService.register(user);
-    return res.status(201).send(userFromDB);
+    return res.status(201).send({"massage": `${userFromDB}`});
   } catch (error) {
     return error
   }
