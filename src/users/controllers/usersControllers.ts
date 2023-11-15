@@ -8,6 +8,7 @@ const login = async (req: Request, res: Response) => {
     const userFromClient: UserValid = req.body;
     console.log(userFromClient);
     const user = await usersService.getUser(userFromClient);
+    console.log(user);
     return res.send(user);
   } catch (error) {
     throw error

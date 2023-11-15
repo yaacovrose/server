@@ -17,7 +17,7 @@ interface Attributes {
 
 interface UsersInterface {
   save(): unknown;
-  id: number;
+  id?: number;
   userName: string;
   email: string;
   password: string;

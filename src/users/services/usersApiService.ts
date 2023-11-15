@@ -12,15 +12,15 @@ const getUser = async (user: UserValid):UserResult => {
     if (!userInDB) return new Error("No user with this email in the database!");
 
     if (!comparePassword(user.password, userInDB.password))
-      return new Error("The email or password is incorrect!");
+      return "The email or password is incorrect!";
 
     return userInDB.userName;
   } catch (error) {
-    throw error;
+    return new Error;
   }
 };
 
-export const register = async (user: UsersInterface): UserResult => {
+const register = async (user: UsersInterface): UserResult => {
   try {
     const check = { email: user.email, password: user.password }
     const { error } = userValidation(check);
