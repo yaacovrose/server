@@ -3,10 +3,10 @@ import { Cart,productCart } from "../interface";
 
 type CollectionResult = Promise<Cart |{}>;
 
-const getCartById = async (userId:string): CollectionResult => {
+const getCartById = async (userName:string): CollectionResult => {
     
     try {
-      const cart = await CartModel.find({userId:userId});
+      const cart = await CartModel.find({userName:userName});
       return cart
     } 
     catch (error) {
