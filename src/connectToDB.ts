@@ -22,7 +22,6 @@ const productSchema:Schema = new Schema<Product>({
 });
 
 const usersSchema:Schema = new Schema<UsersInterface>({
-  id: { type: Number, required: true },
   userName: { type: String, required: true },
   email: { type: String, required: true },
   password: { type: String, required: true },
