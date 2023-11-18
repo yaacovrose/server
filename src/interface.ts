@@ -5,14 +5,14 @@ interface Product {
   price: number;
   description: string;
   category: string;
-  attribute: Attributes[];
+  attributes: Attributes[];
   count: number;
   quantity: number;
 }
 
 interface Attributes {
-  Description: string;
-  Details: number | string;
+  key: string;
+  value: number | string;
 }
 
 interface UsersInterface {

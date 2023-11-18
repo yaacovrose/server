@@ -5,8 +5,8 @@ import { number } from "joi";
 
 
 const attributeSchema:Schema = new Schema<Attributes>({
-  Description: { type: String, required: true },
-  Details: { type: Schema.Types.Mixed, required: true },
+  key: { type: String, required: true },
+  value: { type: Schema.Types.Mixed, required: true },
 });
 
 

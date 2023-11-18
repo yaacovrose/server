@@ -16,6 +16,8 @@ const login = async (req: Request, res: Response) => {
 };
 
 const userRegistration = async (req: Request, res: Response) => {
+  console.log(req.body);
+  
   try {
     const user: UsersInterface = req.body;
     const userFromDB = await usersService.register(user);
