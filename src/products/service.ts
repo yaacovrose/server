@@ -51,11 +51,21 @@ const updateQuantity = async (product: updateQuantity) => {
     }
   };
 
+const updateCount = async (id:string) => {
+    try {
+        const productToUpdate = await productDal.updateCount(Number(id))
+        return productToUpdate
+    } catch (err) {
+        return err
+    }
+  };
+
 const productService = {
     getAllProducts,
     getProductsByCategory,
     getTopCategory,
-    updateQuantity
+    updateQuantity,
+    updateCount
 }
 
 export default productService

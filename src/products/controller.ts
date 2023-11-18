@@ -45,13 +45,24 @@ const updateQuantity = async (req: Request, res: Response) => {
     }
   };
 
+const updateCount = async (req: Request, res: Response) => {
+    const id = req.params.id;
+    try {
+      const quantityUpdate = await productService.updateCount(id);
+      return res.status(200).send(quantityUpdate);
+    } catch (error) {
+      return error
+    }
+  };
+
 
 
 const productController = {
     getAllProducts,
     getProductsByCategory,
     getTopCategory,
-    updateQuantity
+    updateQuantity,
+    updateCount
 }
 
 export default productController 
