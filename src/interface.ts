@@ -28,12 +28,12 @@ interface UserValid {
 }
 
 interface productCart {
-  productId: string
+  productId: number
   quantity: number
 }
 
 interface Cart {
-  userId:string,
+  userName:string,
   product:productCart[]
 }
 

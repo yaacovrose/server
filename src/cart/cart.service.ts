@@ -3,10 +3,10 @@ import { Cart,productCart } from "../interface";
 
 type CollectionResult = Promise<Cart |{}>;
 
-const getCartById = async (userId:string): CollectionResult => {
+const getCartById = async (userName:string): CollectionResult => {
     
     try {
-      const cart = await CartModel.find({userId:userId});
+      const cart = await CartModel.find({userName:userName});
       return cart
     } 
     catch (error) {
@@ -15,18 +15,18 @@ const getCartById = async (userId:string): CollectionResult => {
     }
   };
 
-const updateCart = async (userId:string,cart:Cart) => {
+const updateCart = async (userName:string,cart:Cart) => {
 
   try {
     const updatedCart = await CartModel.findOneAndUpdate(
-      { userId: userId },
+      { userName: userName },
       cart,
-      { new: true } 
+      { new: true,upsert: true  } 
     );
     if (updatedCart) {
       console.log("Cart updated successfully:", updatedCart);
     } else {
-      console.log("No cart found for the given userId:", userId);
+      console.log("No cart found for the given userId:", userName);
     }
   } catch (error) {
     console.error("Error updating cart:", error);
@@ -35,10 +35,10 @@ const updateCart = async (userId:string,cart:Cart) => {
 }
 
 
-const deleteCart = async (userId: string) => {
+const deleteCart = async (userName: string) => {
 
   try {
-    const cart = await CartModel.findOneAndDelete({userId:userId});
+    const cart = await CartModel.findOneAndDelete({userName:userName});
     return cart
   } 
   catch (error) {

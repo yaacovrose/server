@@ -19,11 +19,11 @@ const getCartById = async (req:Request, res:Response) => {
 
 
 const updateCart = (req:Request, res:Response) => {
-        const {userId }= req.body
-        console.log(userId,'ddd');
+        const {userName }= req.body
+        console.log(userName,'ddd');
         const cart:Cart = req.body
     try{
-        const update = cartService.updateCart(userId,cart)
+        const update = cartService.updateCart(userName,cart)
         res.status(200).send(update)
     }
     catch (error) {

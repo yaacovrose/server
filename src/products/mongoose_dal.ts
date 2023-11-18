@@ -89,13 +89,35 @@ const updateQuantity = async (product: updateQuantity): CollectionResult => {
   }
 };
 
+const updateCount = async (productId:number): CollectionResult => {
+  console.log(productId);
+  try {
+    const updatedProduct: Product | null = await ProductModel.findOneAndUpdate(
+      { id: productId },  
+      { $inc: { clickCount: 1 } }, 
+      { new: true }
+    );
+    if (!updatedProduct) {
+      console.log('Product not found');
+      return updatedProduct
+    }
+    return 'Product count incremented successfully!'
+
+    
+  } catch (error) {
+    console.error('Error incrementing product count:', error);
+    throw error;
+  }
+};
+
 
 
 const productDal = {
   getAllProducts,
   getProductsByCategory,
   getTopCategory,
-  updateQuantity
+  updateQuantity,
+  updateCount
 }
 
 

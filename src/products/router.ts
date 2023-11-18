@@ -10,5 +10,6 @@ productRouter.get('/category/:category', productController.getProductsByCategory
 productRouter.get('/topcategory', productController.getTopCategory);
 
 productRouter.patch('/quantity', productController.updateQuantity);
+productRouter.patch('/:id', productController.updateCount);
 
 export default productRouter;

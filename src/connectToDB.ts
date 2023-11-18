@@ -28,13 +28,13 @@ const usersSchema:Schema = new Schema<UsersInterface>({
 });
 
 const productCartSchema:Schema = new Schema<productCart>({
-  productId: { type: String, required: true },
+  productId: { type: Number, required: true },
   quantity: { type: Number, required: true },
 
 });
 
 const cartSchema:Schema = new Schema<Cart>({
-  userId: { type: String, required: true },
+  userName: { type: String, required: true },
   product: { type: [productCartSchema], required: true },
 
 });
