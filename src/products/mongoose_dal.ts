@@ -89,7 +89,7 @@ const updateQuantity = async (product: updateQuantity): CollectionResult => {
   }
 };
 
-const updateCount = async (productId:number): CollectionResult => {
+const updateCount = async (productId:number):Promise<string|null> => {
   console.log(productId);
   try {
     const updatedProduct: Product | null = await ProductModel.findOneAndUpdate(
